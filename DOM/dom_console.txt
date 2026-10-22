@@ -1,0 +1,33 @@
+JavaScript
+const title = document.querySelector('h1');
+console.log
+ƒ log() { [native code] }
+const title = document.querySelector('h1');
+console.log(title.textContent);
+VM811:2 JavaScript
+undefined
+document.getElementById('p-logo');
+null
+document.querySelector('#firstHeading');
+<h1 id=​"firstHeading" class=​"firstHeading mw-first-heading" style=​"color:​ orange;​ background-color:​ black;​">​…​</h1>​
+const heading = document.querySelector('#firstHeading');
+undefined
+heading.textContent = "Vishesh leanrning DOM! ";
+'Vishesh leanrning DOM! '
+heading.style.color = "Orange";
+'Orange'
+heading.style.backgroundColor = "black";
+'black'
+const newPara = document.createElement('p');
+undefined
+newPara.textContent = "This is a new paragraph added by vishesh via console!";
+'This is a new paragraph added by vishesh via console!'
+const bodyContent = document.querySelector('#bodyContent');
+undefined
+bodyContent.prepend(newPara);
+undefined
+document.body.addEventListener('click', (event) => {
+  console.log(`You clicked on a ${event.target.tagName} element!`);
+  event.target.style.outline = "2px solid blue";
+});
+undefined
